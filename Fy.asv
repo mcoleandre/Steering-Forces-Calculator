@@ -1,0 +1,17 @@
+function [ Fy ] = Fy(alpha,Fz,gamma)
+
+C_y = p_cy1*lambda_Cy;
+D_y = mu_y*DF_zfr;
+mu_y = (p_Dy1 + p_Dy2*df_zfr)*(1-(p_Dy3*(sin(gamma))^2)*lambda_muV);
+K_yalpha0fr = p_Ky1*DF_zfr*lambda_Fz0*sin(2*atan(DF_zfr/(p_Ky2*DF_zfr*lambda_Fz0)))*lambda_Ey;
+K_yalphafr = K_yalpha0fr*(1-p_Ky3*(sin(gamma))^2);
+B_yfr = K_yalphafr/(C_y*D_y+e);
+S_Hyfr = (p_Hy1 + p_Hy2*df_zfr)*lambda_muxy+p_Hy3*sin(gamma)*lambda_Kygamma;
+alpha_yfr = alpha + S_Hyfr;
+S_Vyfr = DF_zfr*((p_Vy1+p_Vy2*df_zfr)*lambda_muxy+(p_Vy3+p_Vy4*df_zfr)*sin(gamma)*lambda_Kygamma)*lambda_muV;
+E_yfr = (p_Ey1 + p_Ey2*df_zfr)*(1-(p_Ey3 + p_Ey4*sin(gamma))*sign(alpha_yfr))*lambda_Ey;
+K_ygamma0fr = (p_Hy3*K_yalpha0fr+DF_zfr*(p_V3_p_Vy3*df_zfr))*lambda_Kygamma;
+
+F_y = D_y*sin(C_y*atan(B_yfr*alpha_yfr-E_yfr(B_yfr*alpha_yfr-atan(B_yfr*alpha_yfr))))+S_vyfr;
+
+end
