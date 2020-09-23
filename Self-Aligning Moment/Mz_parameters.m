@@ -1,1 +1,26 @@
+Mz_q = struct('q_Bz1', 'value');
 
+Mz_q.q_Bz2 = 'value';
+Mz_q.q_Bz3 = 'value';
+Mz_q.q_Bz5 = 'value';
+Mz_q.q_Bz6 = 'value';
+Mz_q.q_Bz9 = 'value';
+Mz_q.q_Bz10 = 'value';
+Mz_q.q_Cz1 = 'value';
+Mz_q.q_Dz1 = 'value';
+Mz_q.q_Dz2 = 'value';
+Mz_q.q_Dz3 = 'value';
+Mz_q.q_Dz4 = 'value';
+Mz_q.q_Dz6 = 'value';
+Mz_q.q_Dz7 = 'value';
+Mz_q.q_Dz8 = 'value';
+Mz_q.q_Dz9 = 'value';
+Mz_q.q_Ez1 = 'value';
+Mz_q.q_Ez2 = 'value';
+Mz_q.q_Ez3 = 'value';
+Mz_q.q_Ez4 = 'value';
+Mz_q.q_Ez5 = 'value';
+Mz_q.q_Hz1 = 'value';
+Mz_q.q_Hz2 = 'value';
+Mz_q.q_Hz3 = 'value';
+Mz_q.q_Hz4 = 'value';
